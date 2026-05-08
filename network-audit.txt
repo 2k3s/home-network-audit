@@ -1,0 +1,55 @@
+# Nmap 7.80 scan initiated Fri May 08 16:12:17 2026 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -O -sV -oN network-audit.txt 192.168.1.1/24
+Nmap scan report for NL20.Home (192.168.1.1)
+Host is up (0.0028s latency).
+Not shown: 992 closed ports
+PORT      STATE    SERVICE      VERSION
+21/tcp    filtered ftp
+22/tcp    filtered ssh
+23/tcp    filtered telnet
+80/tcp    open     http         micro_httpd
+139/tcp   filtered netbios-ssn
+443/tcp   filtered https
+445/tcp   filtered microsoft-ds
+49152/tcp open     upnp         Cisco-Linksys E4200 WAP upnpd (UPnP 1.0)
+MAC Address: D0:DB:B7:95:3E:8D (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=5/8%OT=80%CT=1%CU=38422%PV=Y%DS=1%DC=D%G=Y%M=D0DBB7%TM
+OS:=69FD8641%P=i686-pc-windows-windows)SEQ(SP=FD%GCD=1%ISR=101%TI=Z%CI=I%TS
+OS:=A)SEQ(SP=FD%GCD=1%ISR=101%TI=Z%II=I%TS=C)SEQ(II=I)OPS(O1=M5B4ST11NW6%O2
+OS:=M5B4ST11NW6%O3=M5B4NNT11NW6%O4=M5B4ST11NW6%O5=M5B4ST11NW6%O6=M5B4ST11)W
+OS:IN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%T=40%W=7
+OS:210%O=M5B4NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T
+OS:3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=Y
+OS:%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RI
+OS:PL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: CPE: cpe:/h:cisco:e4200
+
+Nmap scan report for 192.168.1.2
+Host is up (0.039s latency).
+Not shown: 999 closed ports
+PORT  STATE    SERVICE VERSION
+7/tcp filtered echo
+MAC Address: 2E:CC:3D:61:12:CD (Unknown)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.8
+Host is up (0.000012s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+139/tcp  open  tcpwrapped
+445/tcp  open  tcpwrapped
+3306/tcp open  tcpwrapped
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 10|7|8.1|2008|Vista|Longhorn (99%)
+OS CPE: cpe:/o:microsoft:windows_10:1607 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_8.1:r1 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_8 cpe:/o:microsoft:windows_vista::sp1 cpe:/o:microsoft:windows_vista::sp2 cpe:/o:microsoft:windows
+Aggressive OS guesses: Microsoft Windows 10 1607 (99%), Microsoft Windows 10 1511 (96%), Microsoft Windows 10 1703 (96%), Microsoft Windows 7 or 8.1 R1 (93%), Microsoft Windows Server 2008 R2 (92%), Microsoft Windows Server 2008 SP2 (92%), Microsoft Windows 7 SP1 (92%), Microsoft Windows 8.1 Update 1 (92%), Microsoft Windows 10 (92%), Microsoft Windows 10 10586 - 14393 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 08 16:14:32 2026 -- 256 IP addresses (3 hosts up) scanned in 135.93 seconds
