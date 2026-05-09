@@ -53,9 +53,5 @@ TCP    127.0.0.1:3306    0.0.0.0:0    LISTENING
 Port 3306 is now only accessible from localhost. No external or LAN connections possible.
 
 ## Follow-up
-
-MySQL X Protocol port 33060 is still bound to `0.0.0.0`. Lower severity than 3306
-but can be locked down by adding to `my.ini`:
-```ini
-mysqlx-bind-address = 127.0.0.1
-```
+MySQL X Protocol port 33060 has been locked down by adding `mysqlx-bind-address = 127.0.0.1`
+to `my.ini`. Verified with netstat — both ports now bound to 127.0.0.1.

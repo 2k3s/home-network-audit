@@ -17,7 +17,7 @@ A beginner networking project to map and secure my home network using nmap.
 
 | Device | IP | Issue | Status |
 |---|---|---|---|
-| Cisco-Linksys E4200 Router | 192.168.1.1 | UPnP enabled on port 49152 | ⚠️ To review |
+| Cisco-Linksys E4200 Router | 192.168.1.1 | UPnP enabled on port 49152 | ✅ Fixed |
 | Windows PC | 192.168.1.8 | MySQL bound to 0.0.0.0:3306 | ✅ Fixed |
 | Google Pixel 7 Pro | 192.168.1.2 | Randomized MAC, unidentified | ✅ Identified |
 
@@ -57,7 +57,7 @@ net start MySQL80
 ```
 
 ## Next steps
-- [ ] Disable UPnP on the router
-- [ ] Identify the unknown device at 192.168.1.2 via router admin panel
-- [ ] Lock down MySQL X Protocol port 33060 with `mysqlx-bind-address = 127.0.0.1`
+- [x] Disable UPnP on the router
+- [x] Identify the unknown device at 192.168.1.2 via router admin panel
+- [x] Lock down MySQL X Protocol port 33060
 - [ ] Verify router admin panel is using a strong, non-default password
