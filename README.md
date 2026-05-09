@@ -19,7 +19,7 @@ A beginner networking project to map and secure my home network using nmap.
 |---|---|---|---|
 | Cisco-Linksys E4200 Router | 192.168.1.1 | UPnP enabled on port 49152 | ⚠️ To review |
 | Windows PC | 192.168.1.8 | MySQL bound to 0.0.0.0:3306 | ✅ Fixed |
-| Unknown device | 192.168.1.2 | Randomized MAC, unidentified | ⚠️ To investigate |
+| Google Pixel 7 Pro | 192.168.1.2 | Randomized MAC, unidentified | ✅ Identified |
 
 See the [`findings/`](./findings/) folder for detailed writeups on each issue.
 

@@ -3,7 +3,7 @@
 **Date:** 2026-05-08  
 **Device:** 192.168.1.2  
 **Severity:** Low  
-**Status:** ⚠️ To investigate
+**Status:** ✅ Identified
 
 ## Description
 
@@ -18,6 +18,7 @@ nmap was unable to determine the OS or hostname.
 ## Evidence
 
 nmap output:
+
 ```
 Nmap scan report for 192.168.1.2
 Host is up (0.039s latency).
@@ -26,6 +27,14 @@ PORT  STATE    SERVICE VERSION
 MAC Address: 2E:CC:3D:61:12:CD (Unknown)
 Too many fingerprints match this host to give specific OS details
 ```
+
+### Resolution
+
+Device identified as a Google Pixel 7 Pro. MAC randomization is enabled by
+
+default on Android, which is why the MAC prefix was unrecognizable. No further
+
+action needed.
 
 ## Recommended investigation
 
@@ -39,3 +48,4 @@ Too many fingerprints match this host to give specific OS details
 MAC randomization is normal and not itself a security concern. The device is only
 flagged here because it could not be identified. Once identified, this finding can
 be closed.
+
